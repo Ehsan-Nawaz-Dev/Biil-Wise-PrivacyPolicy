@@ -5,7 +5,7 @@
   # 🛡️ BillWise Pakistan — Legal & Privacy Center
 
   **Official Privacy Policy, Terms of Service & Google Play Data Safety Documentation**  
-  *Application Package:* `com.billwise.pakistan` • *Target:* Android & iOS
+  *Application:* BillWise Pakistan • *Target:* Android & iOS
 
   <p align="center">
     <a href="#-features"><img src="https://img.shields.io/badge/Architecture-100%25%20Offline--First-059669?style=for-the-badge&logo=shield" alt="Offline First" /></a>
@@ -117,7 +117,7 @@ This repository includes a pre-configured GitHub Actions workflow:
 
 ## 📱 Google Play Console Integration Guide
 
-When submitting or updating **BillWise Pakistan** (`com.billwise.pakistan`) on Google Play Console:
+When submitting or updating **BillWise Pakistan** on Google Play Console:
 
 1. **Privacy Policy URL:**
    - Go to **Policy & Programs** > **App Content** > **Privacy Policy**.
@@ -141,10 +141,9 @@ BillWise Pakistan provides tracking organization for:
 
 ## 📬 Contact & Support
 
-- **App Package:** `com.billwise.pakistan`
-- **Developer:** Aampower Developer / BillWise Pakistan
-- **Support Email:** [support@billwise.pk](mailto:support@billwise.pk)
-- **Alternate Email:** [aampower.developer@gmail.com](mailto:aampower.developer@gmail.com)
+- **Application:** BillWise Pakistan
+- **Developer:** Goodluck Tech / BillWise Pakistan
+- **Contact Email:** [info@goodlucktech.com](mailto:info@goodlucktech.com)
 
 ---
 
