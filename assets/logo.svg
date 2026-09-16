@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <!-- Shield Icon -->
+  <rect x="0" y="4" width="40" height="40" rx="10" fill="#080C15" />
+  <rect x="1" y="5" width="38" height="38" rx="9" fill="none" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.35" />
+  <path d="M20 12L30 16V22.5C30 28.5 25.8 34.2 20 35.5C14.2 34.2 10 28.5 10 22.5V16L20 12Z" fill="url(#logoGrad)" />
+  <path d="M16.5 23.5L19 26L24 20" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Text -->
+  <text x="50" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" fill="#0F172A" class="logo-text-main">Bill<tspan fill="#059669">Wise</tspan></text>
+  <text x="50" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#64748B" letter-spacing="1.5" class="logo-text-sub">PAKISTAN</text>
+</svg>

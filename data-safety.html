@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Play Data Safety Guide — BillWise Pakistan</title>
+  <meta name="description" content="Exact answers and compliance mapping for Google Play Console Data Safety questionnaire for BillWise Pakistan (com.billwise.pakistan).">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="./index.html" class="brand">
+        <div class="brand-icon">
+          <svg width="32" height="32" viewBox="0 0 48 48">
+            <rect width="48" height="48" rx="12" fill="#080C15" />
+            <path d="M24 10L36 15V23C36 30.5 30.9 37.4 24 39C17.1 37.4 12 30.5 12 23V15L24 10Z" fill="#10B981" />
+            <path d="M20 24.5L22.8 27.3L28.5 20.7" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Bill<span>Wise</span></span>
+          <span class="brand-badge">Pakistan</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Privacy Policy</a></li>
+          <li><a href="./terms.html" class="nav-link">Terms of Service</a></li>
+          <li><a href="./data-safety.html" class="nav-link active">Data Safety</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="printBtn" class="btn btn-outline" title="Print or Save as PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>PDF / Print</span>
+        </button>
+
+        <button id="themeToggleBtn" class="btn-icon" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge-wrap">
+        <span class="badge">
+          <span class="badge-dot"></span>
+          Developer Submission Reference
+        </span>
+        <span class="badge">Google Play Console Ready</span>
+      </div>
+
+      <h1 class="hero-title">Google Play Data Safety Questionnaire</h1>
+      <p class="hero-subtitle">
+        A definitive, step-by-step mapping guide for the Google Play Console "App content &gt; Data safety" section for <strong>com.billwise.pakistan</strong>.
+      </p>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span>Application: BillWise Pakistan (com.billwise.pakistan)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <aside class="sidebar">
+      <div class="toc-heading">Sections</div>
+      <ul class="toc-list">
+        <li><a href="#summary" class="toc-link">1. Data Safety Summary</a></li>
+        <li><a href="#collection" class="toc-link">2. Data Collection Answers</a></li>
+        <li><a href="#sharing" class="toc-link">3. Data Sharing Answers</a></li>
+        <li><a href="#security" class="toc-link">4. Security Practices</a></li>
+        <li><a href="#categories" class="toc-link">5. Data Types Checklist</a></li>
+      </ul>
+    </aside>
+
+    <main class="content-area">
+
+      <!-- Section 1 -->
+      <article class="policy-card" id="summary">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-num">01</span>
+            <h2 class="section-title">Data Safety Summary</h2>
+          </div>
+        </div>
+        <p>
+          Google Play's Data Safety section requires developers to disclose what user data their app collects and shares. Because BillWise Pakistan is built on an <strong>offline-first architecture</strong>, user data stays on the user's phone.
+        </p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Required Answer</th>
+                <th>Developer Context</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Does your app collect or share any of the required user data types?</td>
+                <td><strong>No</strong> (or "No data collected off-device")</td>
+                <td>All utility bill numbers, accounts, and reminders are stored exclusively on-device in `AsyncStorage`. No data is transferred off the device to proprietary servers.</td>
+              </tr>
+              <tr>
+                <td>Is all user data collected by your app encrypted in transit?</td>
+                <td><strong>Yes</strong> (or N/A)</td>
+                <td>If public duplicate bill lookups are performed over HTTPS, all network requests are encrypted via TLS/SSL.</td>
+              </tr>
+              <tr>
+                <td>Do you provide a way for users to request that their data is deleted?</td>
+                <td><strong>Yes</strong></td>
+                <td>Users can delete accounts inside the app or clear app storage in Android settings.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Section 2 -->
+      <article class="policy-card" id="collection">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Data Collection Disclosure</h2>
+          </div>
+        </div>
+        <p>
+          According to Google Play policy, data that is stored <em>only locally on the device</em> and never transmitted off the device is <strong>not considered "collected"</strong> for the purposes of the Data Safety section.
+        </p>
+        <div class="callout">
+          <div class="callout-title">Google Play Policy Definition Note</div>
+          <p>
+            <em>"Data collected by your app means data transmitted off the user's device."</em> Because BillWise Pakistan does not transmit bill numbers, personal identifiers, or amounts to any server, it does not engage in remote data collection.
+          </p>
+        </div>
+      </article>
+
+      <!-- Section 3 -->
+      <article class="policy-card" id="sharing">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Data Sharing Disclosure</h2>
+          </div>
+        </div>
+        <p>
+          <strong>No Data Shared with Third Parties:</strong> BillWise Pakistan does not sell, lease, transfer, or disclose user utility information to advertising networks, data brokers, or commercial marketing entities.
+        </p>
+      </article>
+
+      <!-- Section 4 -->
+      <article class="policy-card" id="security">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Security Practices</h2>
+          </div>
+        </div>
+        <ul class="policy-list">
+          <li><strong>Data Encrypted in Transit:</strong> Any outgoing communication (e.g. duplicate bill queries via official DISCO portals) uses secure HTTPS (TLS 1.2+).</li>
+          <li><strong>Sandbox Isolation:</strong> Application utilizes Android's internal sandbox storage (`/data/user/0/com.billwise.pakistan/`) preventing unauthorized inter-app snooping.</li>
+          <li><strong>Data Deletion Mechanism:</strong> Full data wipe is supported via standard OS storage wipe and in-app account deletion.</li>
+        </ul>
+      </article>
+
+      <!-- Section 5 -->
+      <article class="policy-card" id="categories">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-num">05</span>
+            <h2 class="section-title">Data Types Checklist for Google Play Console</h2>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Collected?</th>
+                <th>Shared?</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Location (Approximate / Precise)</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No GPS permissions requested.</td>
+              </tr>
+              <tr>
+                <td>Personal Info (Name, Email, Address, Phone)</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No sign-up or profile registration required.</td>
+              </tr>
+              <tr>
+                <td>Financial Info (Credit card, Bank, Income)</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Bill tracking amounts are stored locally only.</td>
+              </tr>
+              <tr>
+                <td>Photos and Videos</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No media access required.</td>
+              </tr>
+              <tr>
+                <td>Contacts</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No contacts permission.</td>
+              </tr>
+              <tr>
+                <td>Device or other IDs</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No advertising ID tracking.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-info">
+          <div class="brand-name">Bill<span>Wise</span> <span style="font-size: 0.8em; color: var(--text-muted); font-weight: 500;">Pakistan</span></div>
+          <p>
+            Google Play Console Data Safety Reference for BillWise Pakistan (<code>com.billwise.pakistan</code>).
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <div>
+            <div class="footer-col-title">Legal & Compliance</div>
+            <ul class="footer-links">
+              <li><a href="./index.html" class="footer-link">Privacy Policy</a></li>
+              <li><a href="./terms.html" class="footer-link">Terms of Service</a></li>
+              <li><a href="./data-safety.html" class="footer-link">Data Safety Guide</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 BillWise Pakistan. All rights reserved.</div>
+        <div>Google Play Console Compliance Reference.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
