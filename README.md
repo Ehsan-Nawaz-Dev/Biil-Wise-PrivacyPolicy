@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./assets/favicon.svg" alt="BillWise Pakistan Logo" width="80" height="80" />
+  <img src="./assets/icon.png" alt="BillWise Pakistan App Icon" width="96" height="96" style="border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 
   # 🛡️ BillWise Pakistan — Legal & Privacy Center
 
